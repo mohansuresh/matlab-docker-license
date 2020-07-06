@@ -106,6 +106,7 @@ USE_SERVER
 5. Uncomment the line `ADD network.lic /usr/local/MATLAB/$MATLAB_RELEASE/licenses/`
 6. Open `matlab_installer_input.txt` in a text editor and edit the following sections:
     - `licensePath` Add the destination path of the network.lic
+    - eg:- `licensePath=/usr/local/MATLAB/R2019b/licenses/network.lic`
 7. Run the docker build command without the `--build-arg LICENSE_SERVER=27000@MyServerName` option. Use a command of the form
 ```
 docker build -t matlab:r2020a .
